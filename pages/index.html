@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <h1>Jogo da Velha</h1>
+        <div id="button-container">
+            <button id="multiplayer">Multiplayer</button>
+            <button id="single-player">Single Player</button>
+        </div>
+
+        <div id="container" class="hide">
+            <div class="box" id="um"></div>
+            <div class="box" id="dois"></div>
+            <div class="box" id="tres"></div>
+            <div class="box" id="quatro"></div>
+            <div class="box" id="cinco"></div>
+            <div class="box" id="seis"></div>
+            <div class="box" id="sete"></div>
+            <div class="box" id="oito"></div>
+            <div class="box" id="nove"></div>
+
+            <div id="scoreboard-container">
+                <h2>Placar</h2>
+                <span class="score-box">
+                    <span id="x-scoreboard">X</span>:
+                    <span id="scoreboard-1">0</span>
+                </span>
+                <span class="score-box">
+                    <span id="o-scoreboard"></span>:
+                    <span id="scoreboard-2">0</span>
+                </span>
+            </div>
+        </div>
+        <div class="hide">
+            <div class="x">X</div>
+            <div class="o"></div>
+        </div>
+
+        <div id="message" class="hide">
+            <p></p>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
